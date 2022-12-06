@@ -25,12 +25,13 @@
         <center>
         <div class="container">
       <div class="item">
-        <h1> <b>Hey Honey</b></h1>
-    
+        <h1> <b><span id="greeting"></span> Honey</b></h1>
+
         <p>Today is the: <span id="datetime"></span><br></p>
             <script>
               var dt = new Date();
               document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+              document.getElementById('greeting').innerHTML = new Date().getHours() >= 12 ? 'Good Afternoon' : 'Good Morning';
             </script>
         <h2 >Soooooo this is a little project.</h2>
             <p> And since we are a team I want you to see our progress.<br>
