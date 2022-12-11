@@ -1,4 +1,4 @@
-    <!DOTCTYPE html>
+<!DOTCTYPE html>
     <html>
     <head>
         <title>Because you are special</title>
@@ -28,11 +28,6 @@
         <h1> <b><span id="greeting"></span> Honey</b></h1>
 
         <p>Today is the: <span id="datetime"></span><br></p>
-            <script>
-              var dt = new Date();
-              document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
-              document.getElementById('greeting').innerHTML = new Date().getHours() >= 12 ? 'Good Afternoon' : 'Good Morning';
-            </script>
         <h2 >Soooooo this is a little project.</h2>
             <p> And since we are a team I want you to see our progress.<br>
             Every day there will be a new features so make sure to drop by.<br><br>
@@ -41,9 +36,16 @@
              
      <ul>
       <li><a style="text-decoration: none;" href="https://www.youtube.com/watch?v=GLtv7OzokyI" target="_blank" title="because i think about you" >Song of the day.</a><br><br></li>
-      <li><a style="text-decoration: none;" href="https://www.24-good-deeds.com/2022/2022-day-7" target="_blank" title="because you are important" >The gift you gave the world.</a><br><br></li>
+      <li><a style="text-decoration: none;" id="kalender" href="test" target="_blank" title="because you are important" >The gift you gave the world.</a><br><br></li>
       <li><a style="text-decoration: none; "   >No news just me telling you: <br> <b>You are being loved.</b>  </a><br><br></li>
     </ul>   
+            <script>
+              var dt = new Date();
+            var day = dt.getDate();
+              document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+              document.getElementById('greeting').innerHTML = new Date().getHours() >= 12 ? 'Good Afternoon' : 'Good Morning';
+              document.getElementById("kalender").href = "https://www.24-good-deeds.com/2022/2022-day-" + day.toString();
+            </script>
     
        
         
@@ -54,4 +56,3 @@
     ​
     </body>
     </html>
-    
