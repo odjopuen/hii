@@ -1,58 +1,70 @@
-<!DOTCTYPE html>
-    <html>
-    <head>
-        <title>Because you are special</title>
-    
-        <style>
-           body {background-image: url("https://raw.githubusercontent.com/odjopuen/hii/main/img/use1.jpg")}
-          .container {
-            border: 2px solid #ccc;
-            padding: 10px;
-            width: 20em;}
-          .item {
-              width: -moz-fit-content;
-            width: fit-content;
-            background-color: white;
-          padding: 5px;
-            margin-bottom: 1em;}
-                a{color:black;font-weight: bold;}
-          h1 {font-family: 'Brush Script MT', cursive;}
-          h2{font-family: 'Brush Script MT', cursive;}
-          p{font-weight: bold;}
-        </style>
-    </head>
-    <body >
-        <center>
-        <div class="container">
-      <div class="item">
-        <h1> <b><span id="greeting"></span> Honey</b></h1>
 
-        <p>Today is the: <span id="datetime"></span><br></p>
-        <h2 >Soooooo this is a little project.</h2>
-            <p> And since we are a team I want you to see our progress.<br>
-            Every day there will be a new features so make sure to drop by.<br><br>
-             You know that I love lists!<br><br>
-             Just click down here:</p>
-             
-     <ul>
-      <li><a style="text-decoration: none;" href="https://www.youtube.com/watch?v=GLtv7OzokyI" target="_blank" title="because i think about you" >Song of the day.</a><br><br></li>
-      <li><a style="text-decoration: none;" id="kalender" href="test" target="_blank" title="because you are important" >The gift you gave the world.</a><br><br></li>
-      <li><a style="text-decoration: none; "   >No news just me telling you: <br> <b>You are being loved.</b>  </a><br><br></li>
-    </ul>   
-            <script>
-              var dt = new Date();
-            var day = dt.getDate();
-              document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
-              document.getElementById('greeting').innerHTML = new Date().getHours() >= 12 ? 'Good Afternoon' : 'Good Morning';
-              document.getElementById("kalender").href = "https://www.24-good-deeds.com/2022/2022-day-" + day.toString();
-            </script>
-    
-       
-        
-        </center>
-        </div>
-      </div>
+<!DOTCTYPE html>
+<html>
+<head>
+    <title>Because you are special</title>
+
+    <style>
+       body {background-image: url("https://raw.githubusercontent.com/odjopuen/hii/main/img/use1.jpg")}
+      .container {
+        border: 2px solid #ccc;
+        padding: 10px;
+        width: 25em;}
+      .item {
+          width: -moz-fit-content;
+        width: fit-content;
+        background-color: white;
+      padding: 5px;
+        margin-bottom: 1em;}
+            a{color:black;font-weight: bold;}
+      h1 {font-family: 'Brush Script MT';}
+      body {
+  font-family: Garamond, serif;
+}
+    </style>
+</head>
+<body >
+    <center>
+ <div class="container">
+  <div class="item">
+    <h1> <b><span id="greeting"></span> Honey</b></h1>
+
+    <p>Today is the: <span id="datetime"></span><br></p>
+    <ul>
+        <li><a  href="https://www.youtube.com/watch?v=5Ug7HhxqWtc" target="_blank" title="because i think about you" >Song of the day.</a><br><br></li>
+        <li><a  id="kalender" href="test" target="_blank" title="because you are important" >The gift you gave the world.</a><br><br></li>
+      
+      </ul>   
+    <h2 > It took me a long time to think of new things I could give you.</h2>
+        <p>You gave me so much over the course of the last 5 month.<br><br>
+        Then I realized that I don’t need to give you new things.<br><br>
+        Sometimes you just need to give old things a new meaning.<br>
+        Btw that is also something I´ve learned from you.<br>
+        In some ways we are always connected, you know? </p>
+      
+ <ul>
+    <li><p>A stranger will smile at you to. </p></li>
+      <li><p>Ein Fremder wird dir sein lächeln schenken.</p></li>
+      <li><p>Bliss is a stay in between of too little and too much. </p></li>
+      <li><p>Glückseligkeit ist ein Aufenthalt zwischen zu wenig und zu viel. </p></li>
+  </ul>   
      
-    ​
-    </body>
-    </html>
+
+        <script>
+        var dt = new Date();
+        var day = dt.getDate();
+          document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+          document.getElementById('greeting').innerHTML = new Date().getHours() >= 12 ? 'Good Afternoon' : 'Good Morning';
+          document.getElementById("kalender").href = "https://www.24-good-deeds.com/2022/2022-day-" + day.toString();
+        </script>
+
+   
+ </div>
+  </div>
+
+    </center>
+
+
+</body>
+</html>
+
